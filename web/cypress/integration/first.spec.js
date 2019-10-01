@@ -6,6 +6,7 @@ describe('Todoist login', function() {
 		cy.get('iframe').iframe().find('iframe').iframe().find('input[name="email"]').click().type("jc.mojicap@uniandes.edu.co")
 		cy.get('iframe').iframe().find('iframe').iframe().find('input[name="password"]').click().type("Automatizacion2019")
 		cy.get('iframe').iframe().find('iframe').iframe().find('input[name="password"]').click().type('{enter}')
-		cy.get('span[id="gear_holder"]').click().should('to.exist')
+		//cy.get('span[id="gear_holder"]').click().should('to.exist')
+		cy.contains('Log in')
 	})
 })
